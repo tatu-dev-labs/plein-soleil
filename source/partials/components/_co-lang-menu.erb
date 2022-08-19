@@ -1,0 +1,42 @@
+<!-- This example requires Tailwind CSS v2.0+ -->
+<div class="co-lang-menu">
+  <div>
+    <button type="button" class="el-lang-menu-button" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <span>ES</span>
+      <!-- Heroicon name: solid/chevron-down -->
+      <svg class="el-lang-menu-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <!--
+    Dropdown menu, show/hide based on menu state.
+
+    Entering: "transition ease-out duration-100"
+      From: "transform opacity-0 scale-95"
+      To: "transform opacity-100 scale-100"
+    Leaving: "transition ease-in duration-75"
+      From: "transform opacity-100 scale-100"
+      To: "transform opacity-0 scale-95"
+  -->
+  <div class="el-lang-menu-options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <%= link_to 'ES', '/', 
+        :class => 'el-lang-menu-options-item', 
+        :role => 'menuitem', 
+        :id => 'menu-item-0' 
+      %>
+
+      <%= link_to 'EN', '/en/', 
+        :class => 'el-lang-menu-options-item', 
+        :role => 'menuitem', 
+        :id => 'menu-item-1' 
+      
+      %>
+      <%= link_to 'DE', '/de/', 
+        :class => 'el-lang-menu-options-item', 
+        :role => 'menuitem', 
+        :id => 'menu-item-2' 
+      %>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-activate :i18n, :langs => [:es, :en], :mount_at_root => :es
+activate :i18n, :langs => [:es, :en, :de], :mount_at_root => :es
 
 activate :external_pipeline,
   name: :tailwind,

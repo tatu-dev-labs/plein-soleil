@@ -4,7 +4,12 @@ module.exports = {
     "./source/**/*.{html,erb}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: '#282828',
+        primary: '#F05A24',
+      },
+    },
   },
   plugins: [],
 }

@@ -3,7 +3,68 @@
 @tailwind utilities;
 
 @layer components {
+    body {
+        @apply text-dark;
+    }
     /* elements */
+    .el-logo {
+        width: 148px;
+    }
+    .el-main-menu {
+        @apply flex flex-row justify-center items-center;
+    }
+
+    .el-main-menu li {
+        @apply ml-14;
+    }
+
+    .el-main-menu a {
+        @apply hover:border-b-2 border-orange-500 pb-3 text-lg;
+    }
+
+    .el-lang-menu-button {
+        @apply inline-flex justify-center w-full border border-gray-300 shadow-sm p-2;
+    }
+
+    .el-lang-menu-button-icon {
+        @apply -mr-1 ml-1 h-5 w-5;
+    }
+
+    .el-lang-menu-options {
+       @apply absolute bg-white mt-2 origin-top-right right-0 shadow-lg w-44; 
+    }
+
+    .el-lang-menu-options-item {
+        @apply text-gray-700 block px-4 py-2 text-sm;
+    }
     /* components */
+    .co-main-menu {
+        @apply flex flex-row items-center justify-center;
+    }
+    
+    .co-lang-menu {
+        @apply relative inline-block text-left ml-14;
+    }
+
     /* blocks */
+    .bl-header, .bl-footer {
+        @apply container mx-auto flex flex-row justify-between items-center p-4;
+    }
+
+    .bl-footer {
+        @apply text-sm;
+    }
+
+    .bl-footer p {
+        @apply mr-10;
+    }
+    
+    .bl-footer p > span {
+        @apply font-bold;
+    }
+
+    .bl-footer a {
+        @apply text-lg;
+    }
+
 }
