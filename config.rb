@@ -81,8 +81,8 @@ config[:css_dir] = 'css'
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
 configure :build do
-  activate :jsoptimize
-  activate :imgoptimize
+#  activate :jsoptimize
+#  activate :imgoptimize
 #   activate :minify_css
 #   activate :minify_javascript
 end

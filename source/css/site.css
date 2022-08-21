@@ -32,11 +32,46 @@
 
     .el-lang-menu-options {
        @apply absolute bg-white mt-2 origin-top-right right-0 shadow-lg w-44; 
+       z-index: 99999;
     }
 
     .el-lang-menu-options-item {
         @apply text-gray-700 block px-4 py-2 text-sm;
     }
+
+    .el-home-slide {
+        height: calc(100vh - 200px);
+    }
+
+    .el-villas-hero-title {
+        @apply text-2xl leading-8 uppercase font-normal;
+    }
+
+    .el-villas-hero-text {
+        @apply text-5xl mt-5;
+        line-height: 58px;
+    }
+
+    .el-villas-hero-button {
+        @apply mt-10 bg-white/70 hover:bg-primary text-primary hover:text-white py-4 px-6 text-lg uppercase leading-5 border-2 border-primary;
+    }
+
+    .el-villas-advantages-icon {
+        @apply text-primary;
+    }
+
+    .el-villas-advantages-title {
+        @apply text-4xl font-medium mt-8 h-auto lg:h-20;
+    }
+
+    .el-villas-advantages-text {
+        @apply mt-8 lg:mt-2 leading-8;
+    }
+
+    .el-villas-video-icon {
+        @apply text-white text-5xl
+    }
+
     /* components */
     .co-main-menu {
         @apply flex flex-row items-center justify-center;
@@ -46,9 +81,18 @@
         @apply relative inline-block text-left ml-14;
     }
 
+    .co-villas-hero-content {
+        @apply container mx-auto;
+    }
+
+    .co-villas-advantages-item {
+        @apply px-10 mb-20 lg:mb-0;
+    }
+
     /* blocks */
     .bl-header, .bl-footer {
         @apply container mx-auto flex flex-row justify-between items-center p-4;
+        height: 100px;
     }
 
     .bl-footer {
@@ -67,4 +111,17 @@
         @apply text-lg;
     }
 
+    .bl-villas-hero {
+        @apply w-full py-44 bg-villas-hero;
+        height: 800px;
+    }
+
+    .bl-villas-advantages {
+        @apply container mx-auto my-36 text-center flex flex-col lg:flex-row  items-start justify-center;
+    }
+
+    .bl-villas-video {
+        @apply flex flex-row items-center justify-center bg-video-cover;
+        height: 800px;
+    }
 }

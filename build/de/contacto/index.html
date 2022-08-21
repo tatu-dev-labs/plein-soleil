@@ -28,6 +28,7 @@
 
 <!--CSS!-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/splide.min.css">
 <link rel="stylesheet" href="/css/site.css">
 	<meta name="description" content="translation missing: de.no key">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -78,18 +79,47 @@ gtag('config', 'XX-XXXXXXXXX-X');
         <li><a href="/de/entorno/">El entorno</a></li>
         <li><a href="/de/contacto/">Contacto</a></li>
     </ul>
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+<div class="co-lang-menu">
+  <div>
+    <button type="button" class="el-lang-menu-button" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      <span>ES</span>
+      <!-- Heroicon name: solid/chevron-down -->
+      <svg class="el-lang-menu-button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg>
+    </button>
+  </div>
+
+  <!--
+    Dropdown menu, show/hide based on menu state.
+
+    Entering: "transition ease-out duration-100"
+      From: "transform opacity-0 scale-95"
+      To: "transform opacity-100 scale-100"
+    Leaving: "transition ease-in duration-75"
+      From: "transform opacity-100 scale-100"
+      To: "transform opacity-0 scale-95"
+  -->
+  <div class="el-lang-menu-options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+      <a href="/de/" class="el-lang-menu-options-item" role="menuitem" id="menu-item-0">ES</a>
+
+      <a href="/en/" class="el-lang-menu-options-item" role="menuitem" id="menu-item-1">EN</a>
+      <a href="/de/" class="el-lang-menu-options-item" role="menuitem" id="menu-item-2">DE</a>
+  </div>
+</div>
 </nav>
-    <ul class="el-lang-menu">
-    <li><a href="/de/">ES</a></li>
-    <li><a href="/en/">EN</a></li>
-    <li><a href="/de/">DE</a></li>
-</ul>
 </header>
 
     
-    <footer class="bl-footer"></footer>
+    <footer class="bl-footer">
+    <p>Pleinsoleil MALLORCA · C/ Costa de Calviá Nº 9 (07181 Sol de Mallorca) · <span>Teléfono:</span> +34 971 131 552 · <span>Móvil</span>: 607 629 947 / 663 567 522</p>
+    <a href="/de/contacto/">Contacto</a>
+</footer>
     <script src="/js/vendor/modernizr-3.7.1.min.js"></script>
-<script src="/js/site.min.js" async></script>
+<script src="/js/vendor/splide.min.js"></script>
+<script src="/js/site.min.js"></script>
 </body>
 
 </html>

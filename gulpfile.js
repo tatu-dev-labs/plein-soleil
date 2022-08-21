@@ -13,7 +13,7 @@ el proyecto
 
 */
 gulp.task('jsoptimize', () => {
-    return gulp.src(['source/js/_main.js'])
+    return gulp.src(['source/js/vendor/splide.min.js','source/js/_main.js'])
 	.pipe(concat('site.min.js'))
 	.pipe(gulp.dest('source/js/'), { overwrite: true })
 	.pipe(gulp.dest('build/js/'), { overwrite: true });

@@ -616,6 +616,7 @@ body {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  z-index: 99999;
 }
 
 .el-lang-menu-options-item {
@@ -628,6 +629,85 @@ body {
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.el-home-slide {
+  height: calc(100vh - 200px);
+}
+
+.el-villas-hero-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2rem;
+}
+
+.el-villas-hero-text {
+  margin-top: 1.25rem;
+  font-size: 3rem;
+  line-height: 1;
+  line-height: 58px;
+}
+
+.el-villas-hero-button {
+  margin-top: 2.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(240 90 36 / var(--tw-border-opacity));
+  background-color: rgb(255 255 255 / 0.7);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(240 90 36 / var(--tw-text-opacity));
+}
+
+.el-villas-hero-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 90 36 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.el-villas-advantages-icon {
+  --tw-text-opacity: 1;
+  color: rgb(240 90 36 / var(--tw-text-opacity));
+}
+
+.el-villas-advantages-title {
+  margin-top: 2rem;
+  height: auto;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  .el-villas-advantages-title {
+    height: 5rem;
+  }
+}
+
+.el-villas-advantages-text {
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .el-villas-advantages-text {
+    margin-top: 0.5rem;
+  }
+}
+
+.el-villas-video-icon {
+  font-size: 3rem;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 /* components */
@@ -644,6 +724,57 @@ body {
   margin-left: 3.5rem;
   display: inline-block;
   text-align: left;
+}
+
+.co-villas-hero-content {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .co-villas-hero-content {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .co-villas-hero-content {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .co-villas-hero-content {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .co-villas-hero-content {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .co-villas-hero-content {
+    max-width: 1536px;
+  }
+}
+
+.co-villas-hero-content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.co-villas-advantages-item {
+  margin-bottom: 5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .co-villas-advantages-item {
+    margin-bottom: 0px;
+  }
 }
 
 /* blocks */
@@ -690,6 +821,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  height: 100px;
 }
 
 .bl-footer {
@@ -708,6 +840,75 @@ body {
 .bl-footer a {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.bl-villas-hero {
+  width: 100%;
+  background-image: url('/images/villas-hero.png');
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+  height: 800px;
+}
+
+.bl-villas-advantages {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bl-villas-advantages {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bl-villas-advantages {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bl-villas-advantages {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bl-villas-advantages {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bl-villas-advantages {
+    max-width: 1536px;
+  }
+}
+
+.bl-villas-advantages {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .bl-villas-advantages {
+    flex-direction: row;
+  }
+}
+
+.bl-villas-video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/villas-video-cover.png');
+  height: 800px;
 }
 
 .scale-95 {
