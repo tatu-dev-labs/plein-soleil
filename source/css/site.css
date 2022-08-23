@@ -19,7 +19,7 @@
     }
 
     .el-main-menu a {
-        @apply hover:border-b-2 border-orange-500 pb-3 text-lg;
+        @apply hover:border-b-2 border-primary pb-3 text-lg;
     }
 
     .el-lang-menu-button {
@@ -72,6 +72,26 @@
         @apply text-white text-5xl
     }
 
+    .el-new-promo-carousel-title {
+        @apply text-2xl leading-8 uppercase font-normal text-center tracking-widest;
+    }
+
+    .el-new-promo-carousel-text {
+        @apply text-4xl leading-10 text-center mt-3;
+    }
+
+    .el-new-promo-carousel-legend {
+       @apply block text-xs text-center my-10; 
+    }
+
+    .el-villas-carousel-title {
+        @apply text-3xl mt-5;
+    }
+
+    .el-villas-carousel-link {
+        @apply inline-block text-primary uppercase border-b-2 border-white hover:border-primary pb-1 mt-4 text-lg;
+    }
+
     /* components */
     .co-main-menu {
         @apply flex flex-row items-center justify-center;
@@ -91,7 +111,7 @@
 
     /* blocks */
     .bl-header, .bl-footer {
-        @apply container mx-auto flex flex-row justify-between items-center p-4;
+        @apply container mx-auto flex flex-row justify-between items-center py-4;
         height: 100px;
     }
 
@@ -123,5 +143,9 @@
     .bl-villas-video {
         @apply flex flex-row items-center justify-center bg-video-cover;
         height: 800px;
+    }
+
+    .bl-new-promo-carousel {
+        @apply py-10;
     }
 }

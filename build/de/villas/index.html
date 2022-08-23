@@ -27,9 +27,10 @@
 <meta name="theme-color" content="#ffffff">
 
 <!--CSS!-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/splide.min.css">
 <link rel="stylesheet" href="/css/site.css">
+<script src="https://kit.fontawesome.com/a2c4673d96.js" crossorigin="anonymous"></script>
+
 	<meta name="description" content="translation missing: de.VillasMetaDescription">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -116,10 +117,76 @@ gtag('config', 'XX-XXXXXXXXX-X');
   <section class="bl-villas-hero">
     <div class="co-villas-hero-content">
         <h1 class="el-villas-hero-title">Nuevas villas en venta</h1>
-        <p class="el-villas-hero-text">Luz, brillo, Mediterráneo, lujo, ... ¡Un privilegio!</p>
+        <p class="el-villas-hero-text">Luz, brillo, Mediterráneo, lujo, ... <br /> ¡Un privilegio!</p>
         <button class="el-villas-hero-button">¡Solicita información!</button>
     </div>
 </section>
+  <div class="bl-villas-advantages">
+    <div class="co-villas-advantages-item">
+        <i class="el-villas-advantages-icon fa-solid fa-star fa-3x"></i>
+        <p class="el-villas-advantages-title">Villas Exclusivas</p>
+        <p class="el-villas-advantages-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum risus lectus, quis porta lacus egestas vel. Phasellus rutrum eget massa et mollis. </p>
+    </div>
+
+    <div class="co-villas-advantages-item">
+        <i class="el-villas-advantages-icon fa-solid fa-location-dot fa-3x"></i>
+        <p class="el-villas-advantages-title">Inmejorable Ubicación</p>
+        <p class="el-villas-advantages-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum risus lectus, quis porta lacus egestas vel. Phasellus rutrum eget massa et mollis. </p>
+    </div>
+
+    <div class="co-villas-advantages-item">
+        <i class="el-villas-advantages-icon fa-solid fa-check-circle fa-3x"></i>
+        <p class="el-villas-advantages-title">Máxima Calidad</p>
+        <p class="el-villas-advantages-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum risus lectus, quis porta lacus egestas vel. Phasellus rutrum eget massa et mollis. </p>
+    </div>
+</div>
+  <a href="#" class="bl-villas-video">
+    <i class="el-villas-video-icon fa-solid fa-play-circle"></i>
+</a>
+  <section class="bl-new-promo-carousel">
+    <h2 class="el-new-promo-carousel-title">Nueva promoción</h2>
+    <p class="el-new-promo-carousel-text">Descubre nuestras villas en venta</p>
+    <span class="el-new-promo-carousel-legend">Lorem ipsum</span>
+
+    <div class="splide splide-carousel co-villas-carousel container mx-auto" aria-label="slider carousel">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide w-1/2">
+                    <img src="/images/villas/thumbs/villa-1-calvia-3.jpg" class="el-villas-carousel-image" alt="Villa 1 calvia 3" />
+                    <h3 class="el-villas-carousel-title">Villa 1. Costa de Calvia nº3</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <img src="/images/villas/thumbs/villa-2-calvia-5.jpg" class="el-villas-carousel-image" alt="Villa 2 calvia 5" />
+                    <h3 class="el-villas-carousel-title">Villa 2. Costa de Calvia nº5</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <img src="/images/villas/thumbs/villa-1-calvia-3.jpg" class="el-villas-carousel-image" alt="Villa 1 calvia 3" />
+                    <h3 class="el-villas-carousel-title">Villa 3. Costa de Calvia nº3</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <img src="/images/villas/thumbs/villa-2-calvia-5.jpg" class="el-villas-carousel-image" alt="Villa 2 calvia 5" />
+                    <h3 class="el-villas-carousel-title">Villa 4. Costa de Calvia nº5</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function() {
+    let splideCarousel = new Splide( '.splide-carousel', {
+        type   : 'loop',
+        perPage: 2,
+        perMove: 1,
+    } );
+
+    splideCarousel.mount();
+} );
+</script>
 </main>
     <footer class="bl-footer">
     <p>Pleinsoleil MALLORCA · C/ Costa de Calviá Nº 9 (07181 Sol de Mallorca) · <span>Teléfono:</span> +34 971 131 552 · <span>Móvil</span>: 607 629 947 / 663 567 522</p>

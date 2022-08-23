@@ -551,6 +551,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 body {
   --tw-text-opacity: 1;
   color: rgb(40 40 40 / var(--tw-text-opacity));
@@ -575,7 +609,7 @@ body {
 
 .el-main-menu a {
   --tw-border-opacity: 1;
-  border-color: rgb(249 115 22 / var(--tw-border-opacity));
+  border-color: rgb(240 90 36 / var(--tw-border-opacity));
   padding-bottom: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -710,6 +744,56 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.el-new-promo-carousel-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2rem;
+  letter-spacing: 0.1em;
+}
+
+.el-new-promo-carousel-text {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.el-new-promo-carousel-legend {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.el-villas-carousel-title {
+  margin-top: 1.25rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.el-villas-carousel-link {
+  margin-top: 1rem;
+  display: inline-block;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  padding-bottom: 0.25rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(240 90 36 / var(--tw-text-opacity));
+}
+
+.el-villas-carousel-link:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 90 36 / var(--tw-border-opacity));
+}
+
 /* components */
 
 .co-main-menu {
@@ -820,7 +904,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   height: 100px;
 }
 
@@ -909,6 +994,20 @@ body {
   justify-content: center;
   background-image: url('/images/villas-video-cover.png');
   height: 800px;
+}
+
+.bl-new-promo-carousel {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .scale-95 {

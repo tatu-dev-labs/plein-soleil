@@ -1,0 +1,35 @@
+<section class="bl-new-promo-carousel">
+    <h2 class="el-new-promo-carousel-title">Promoción vendida</h2>
+    <p class="el-new-promo-carousel-text">Villas Plein Soleil</p>
+    <span class="el-new-promo-carousel-legend">Lorem ipsum</span>
+
+    <div class="splide splide-carousel co-sold-villas-carousel container mx-auto" aria-label="slider carousel">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <% data.newpromos.promos.each do |promo| %>
+                <li class="splide__slide w-1/2">
+                    <%= image_tag promo.thumb, :class => 'el-villas-carousel-image' %>
+                    <h3 class="el-villas-carousel-title"><%= promo.name %></h3>
+                    <%= link_to 'Ver ahora', promo.link, 
+                        :class => 'el-villas-carousel-link',
+                        :target => '_blank'
+                    %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function() {
+    let splideCarousel = new Splide( '.co-sold-villas-carousel', {
+        type   : 'loop',
+        perPage: 2,
+        perMove: 1,
+        gap: '30px',
+    } );
+
+    splideCarousel.mount();
+} );
+</script>

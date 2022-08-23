@@ -27,9 +27,10 @@
 <meta name="theme-color" content="#ffffff">
 
 <!--CSS!-->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="/css/splide.min.css">
 <link rel="stylesheet" href="/css/site.css">
+<script src="https://kit.fontawesome.com/a2c4673d96.js" crossorigin="anonymous"></script>
+
 	<meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -113,7 +114,7 @@ gtag('config', 'XX-XXXXXXXXX-X');
 </header>
 
     <main>
-  <section class="splide bl-home-slider" aria-label="Splide Basic HTML Example">
+  <section class="splide splide-hero bl-home-slider" aria-label="Splide Basic HTML Example">
   <div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide el-home-slide">
@@ -128,6 +129,18 @@ gtag('config', 'XX-XXXXXXXXX-X');
 		</ul>
   </div>
 </section>
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function() {
+  let splide = new Splide( '.splide', {
+      type  : 'fade',
+      rewind: true,
+      cover: true,
+  } );
+
+  splide.mount();
+} );
+</script>
 </main>
     <footer class="bl-footer">
     <p>Pleinsoleil MALLORCA · C/ Costa de Calviá Nº 9 (07181 Sol de Mallorca) · <span>Teléfono:</span> +34 971 131 552 · <span>Móvil</span>: 607 629 947 / 663 567 522</p>

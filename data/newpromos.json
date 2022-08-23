@@ -1,0 +1,24 @@
+{
+    "promos": [
+        {
+            "name": "Villa 1. Costa de Calvia nº3",
+            "thumb": "/images/villas/thumbs/villa-1-calvia-3.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa 2. Costa de Calvia nº5",
+            "thumb": "/images/villas/thumbs/villa-2-calvia-5.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa 3. Costa de Calvia nº3",
+            "thumb": "/images/villas/thumbs/villa-1-calvia-3.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa 4. Costa de Calvia nº5",
+            "thumb": "/images/villas/thumbs/villa-2-calvia-5.jpg",
+            "link": "http://www.google.es"
+        }
+    ]
+}
