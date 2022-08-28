@@ -102,7 +102,6 @@
 
     /* SplideJS custom styles */
     .splide {
-        @apply pb-16 px-28;
     }
 
     .splide .splide__arrow {
@@ -139,7 +138,7 @@
 
     /* blocks */
     .bl-header, .bl-footer {
-        @apply container mx-auto flex flex-row justify-between items-center py-4;
+        @apply container mx-auto flex flex-col flex-row justify-between items-center py-4;
         height: 100px;
     }
 
@@ -169,11 +168,12 @@
     }
 
     .bl-villas-video {
-        @apply flex flex-row items-center justify-center bg-video-cover;
+        @apply container w-full flex flex-row items-center justify-center bg-video-cover;
         height: 800px;
     }
 
+    .bl-new-promo-carousel,
     .bl-new-promo-carousel {
-        @apply py-10;
+        @apply container mx-auto py-10;
     }
 }

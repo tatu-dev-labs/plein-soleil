@@ -817,9 +817,6 @@ body {
 /* SplideJS custom styles */
 
 .splide {
-  padding-left: 7rem;
-  padding-right: 7rem;
-  padding-bottom: 4rem;
 }
 
 .splide .splide__arrow {
@@ -956,6 +953,7 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
@@ -1042,7 +1040,42 @@ body {
 }
 
 .bl-villas-video {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bl-villas-video {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bl-villas-video {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bl-villas-video {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bl-villas-video {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bl-villas-video {
+    max-width: 1536px;
+  }
+}
+
+.bl-villas-video {
   display: flex;
+  width: 100%;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -1050,7 +1083,50 @@ body {
   height: 800px;
 }
 
-.bl-new-promo-carousel {
+.bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+    max-width: 1536px;
+  }
+}
+
+.bl-new-promo-carousel, 
+    .bl-new-promo-carousel {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -1058,6 +1134,10 @@ body {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 .w-1\/2 {
