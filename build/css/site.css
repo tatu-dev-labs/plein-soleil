@@ -814,6 +814,40 @@ body {
   border-color: rgb(240 90 36 / var(--tw-border-opacity));
 }
 
+/* SplideJS custom styles */
+
+.splide {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-bottom: 4rem;
+}
+
+.splide .splide__arrow {
+  top: 11rem;
+  opacity: 1;
+}
+
+.splide .splide__arrow svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #ADADAD;
+}
+
+.splide .splide__pagination__page {
+  height: 0.5rem;
+  width: 2.5rem;
+  border-radius: 0px;
+  background-color: rgb(173 173 173 / 0.3);
+  opacity: 1;
+}
+
+.splide .splide__pagination__page.is-active {
+  width: 5rem;
+  transform: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 90 36 / var(--tw-bg-opacity));
+}
+
 /* components */
 
 .co-main-menu {

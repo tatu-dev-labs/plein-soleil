@@ -100,6 +100,26 @@
         @apply inline-block text-primary uppercase border-b-2 border-white hover:border-primary pb-1 mt-4 text-lg;
     }
 
+    /* SplideJS custom styles */
+    .splide {
+        @apply pb-16 px-28;
+    }
+
+    .splide .splide__arrow {
+        @apply opacity-100 top-44;
+    }
+
+    .splide .splide__arrow svg {
+        @apply h-10 w-10 fill-primaryGray;
+    }
+
+    .splide .splide__pagination__page {
+        @apply bg-primaryGray/30 opacity-100 rounded-none w-10 h-2;
+    }
+    .splide .splide__pagination__page.is-active {
+        @apply bg-primary transform-none w-20;
+    }
+
     /* components */
     .co-main-menu {
         @apply flex flex-row items-center justify-center;

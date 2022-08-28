@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         dark: '#282828',
         primary: '#F05A24',
+        primaryGray: '#ADADAD',
       },
       backgroundImage: {
         'villas-hero': "url('/images/villas-hero.png')",
