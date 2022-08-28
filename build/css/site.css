@@ -769,6 +769,26 @@ body {
   line-height: 1rem;
 }
 
+.el-villas-carousel-image-container {
+  position: relative;
+}
+
+.el-villas-carousel-tag {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 0px;
+  width: 9rem;
+  background-color: rgb(240 90 36 / 0.7);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .el-villas-carousel-title {
   margin-top: 1.25rem;
   font-size: 1.875rem;

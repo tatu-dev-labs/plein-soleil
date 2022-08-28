@@ -6,9 +6,12 @@
     <div class="splide splide-carousel co-sold-villas-carousel container mx-auto" aria-label="slider carousel">
         <div class="splide__track">
             <ul class="splide__list">
-                <% data.newpromos.promos.each do |promo| %>
+                <% data.soldpromos.promos.each do |promo| %>
                 <li class="splide__slide w-1/2">
-                    <%= image_tag promo.thumb, :class => 'el-villas-carousel-image' %>
+                    <div class="el-villas-carousel-image-container">
+                        <%= image_tag promo.thumb, :class => 'el-villas-carousel-image' %>
+                        <span class="el-villas-carousel-tag">Vendida</span>
+                    </div>
                     <h3 class="el-villas-carousel-title"><%= promo.name %></h3>
                     <%= link_to 'Ver ahora', promo.link, 
                         :class => 'el-villas-carousel-link',

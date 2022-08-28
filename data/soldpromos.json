@@ -1,0 +1,24 @@
+{
+    "promos": [
+        {
+            "name": "Villa A",
+            "thumb": "/images/villas/thumbs/villa-a.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa B",
+            "thumb": "/images/villas/thumbs/villa-b.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa C",
+            "thumb": "/images/villas/thumbs/villa-a.jpg",
+            "link": "http://www.google.es"
+        },
+        {
+            "name": "Villa D",
+            "thumb": "/images/villas/thumbs/villa-b.jpg",
+            "link": "http://www.google.es"
+        }
+    ]
+}

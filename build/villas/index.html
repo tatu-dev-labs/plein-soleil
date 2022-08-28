@@ -178,10 +178,68 @@ gtag('config', 'XX-XXXXXXXXX-X');
 
 <script>
 document.addEventListener( 'DOMContentLoaded', function() {
-    let splideCarousel = new Splide( '.splide-carousel', {
+    let splideCarousel = new Splide( '.co-villas-carousel', {
         type   : 'loop',
         perPage: 2,
         perMove: 1,
+        gap: '30px',
+    } );
+
+    splideCarousel.mount();
+} );
+</script>
+  <section class="bl-new-promo-carousel">
+    <h2 class="el-new-promo-carousel-title">Promoción vendida</h2>
+    <p class="el-new-promo-carousel-text">Villas Plein Soleil</p>
+    <span class="el-new-promo-carousel-legend">Lorem ipsum</span>
+
+    <div class="splide splide-carousel co-sold-villas-carousel container mx-auto" aria-label="slider carousel">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide w-1/2">
+                    <div class="el-villas-carousel-image-container">
+                        <img src="/images/villas/thumbs/villa-a.jpg" class="el-villas-carousel-image" alt="Villa a" />
+                        <span class="el-villas-carousel-tag">Vendida</span>
+                    </div>
+                    <h3 class="el-villas-carousel-title">Villa A</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <div class="el-villas-carousel-image-container">
+                        <img src="/images/villas/thumbs/villa-b.jpg" class="el-villas-carousel-image" alt="Villa b" />
+                        <span class="el-villas-carousel-tag">Vendida</span>
+                    </div>
+                    <h3 class="el-villas-carousel-title">Villa B</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <div class="el-villas-carousel-image-container">
+                        <img src="/images/villas/thumbs/villa-a.jpg" class="el-villas-carousel-image" alt="Villa a" />
+                        <span class="el-villas-carousel-tag">Vendida</span>
+                    </div>
+                    <h3 class="el-villas-carousel-title">Villa C</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+                <li class="splide__slide w-1/2">
+                    <div class="el-villas-carousel-image-container">
+                        <img src="/images/villas/thumbs/villa-b.jpg" class="el-villas-carousel-image" alt="Villa b" />
+                        <span class="el-villas-carousel-tag">Vendida</span>
+                    </div>
+                    <h3 class="el-villas-carousel-title">Villa D</h3>
+                    <a href="http://www.google.es" class="el-villas-carousel-link" target="_blank">Ver ahora</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener( 'DOMContentLoaded', function() {
+    let splideCarousel = new Splide( '.co-sold-villas-carousel', {
+        type   : 'loop',
+        perPage: 2,
+        perMove: 1,
+        gap: '30px',
     } );
 
     splideCarousel.mount();
