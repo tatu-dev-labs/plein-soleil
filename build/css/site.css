@@ -676,14 +676,20 @@ body {
   line-height: 2rem;
 }
 
-.el-villas-hero-text {
+.el-villas-hero-text, 
+    .el-home-slide-title {
   margin-top: 1.25rem;
   font-size: 3rem;
   line-height: 1;
   line-height: 58px;
 }
 
-.el-villas-hero-button {
+.el-home-slide-title {
+  margin-top: 0px;
+}
+
+.el-villas-hero-button, 
+    .el-home-slide-link {
   margin-top: 2.5rem;
   border-width: 2px;
   --tw-border-opacity: 1;
@@ -700,11 +706,17 @@ body {
   color: rgb(240 90 36 / var(--tw-text-opacity));
 }
 
-.el-villas-hero-button:hover {
+.el-villas-hero-button:hover, 
+    .el-home-slide-link:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(240 90 36 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.el-home-slide-link {
+  margin-top: 2rem;
+  display: inline-block;
 }
 
 .el-villas-advantages-icon {
@@ -816,21 +828,53 @@ body {
 
 /* SplideJS custom styles */
 
-.splide {
+.splide.bl-home-slider .splide__slide {
+  padding: 90px 115px;
 }
 
-.splide .splide__arrow {
+.splide.bl-home-slider .splide__slide .el-slide-content {
+  width: 600px;
+}
+
+.splide.co-villas-carousel .splide__arrow, 
+    .splide.co-sold-villas-carousel .splide__arrow {
   top: 11rem;
   opacity: 1;
 }
 
-.splide .splide__arrow svg {
+.splide.bl-home-slider .splide__arrow {
+  width: 3.5rem;
+}
+
+.splide.bl-home-slider .splide__arrow.splide__arrow--prev {
+  left: 0px;
+}
+
+.splide.bl-home-slider .splide__arrow.splide__arrow--next {
+  right: 0px;
+}
+
+.splide.co-villas-carousel .splide__arrow svg, 
+    .splide.co-sold-villas-carousel .splide__arrow svg {
   height: 2.5rem;
   width: 2.5rem;
   fill: #ADADAD;
 }
 
-.splide .splide__pagination__page {
+.splide.bl-home-slider .splide__pagination {
+  bottom: 2.5rem;
+}
+
+.splide.bl-home-slider .splide__pagination__page {
+  height: 0.5rem;
+  width: 2.5rem;
+  border-radius: 0px;
+  background-color: rgb(255 255 255 / 0.3);
+  opacity: 1;
+}
+
+.splide.co-villas-carousel .splide__pagination__page, 
+    .splide.co-sold-villas-carousel .splide__pagination__page {
   height: 0.5rem;
   width: 2.5rem;
   border-radius: 0px;
@@ -838,7 +882,16 @@ body {
   opacity: 1;
 }
 
-.splide .splide__pagination__page.is-active {
+.splide.bl-home-slider .splide__pagination__page.is-active {
+  width: 5rem;
+  transform: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  opacity: 1;
+}
+
+.splide.co-villas-carousel .splide__pagination__page.is-active, 
+    .splide.co-sold-villas-carousel .splide__pagination__page.is-active {
   width: 5rem;
   transform: none;
   --tw-bg-opacity: 1;
@@ -912,6 +965,11 @@ body {
   }
 }
 
+.co-villas-carousel, 
+    .co-sold-villas-carousel {
+  padding-bottom: 5rem;
+}
+
 /* blocks */
 
 .bl-header,  .bl-footer {
@@ -952,12 +1010,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .bl-header,  .bl-footer {
+    flex-direction: row;
+  }
+}
+
+.bl-header, .bl-footer {
   height: 100px;
 }
 
@@ -1036,40 +1102,6 @@ body {
 @media (min-width: 1024px) {
   .bl-villas-advantages {
     flex-direction: row;
-  }
-}
-
-.bl-villas-video {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .bl-villas-video {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .bl-villas-video {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .bl-villas-video {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .bl-villas-video {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .bl-villas-video {
-    max-width: 1536px;
   }
 }
 

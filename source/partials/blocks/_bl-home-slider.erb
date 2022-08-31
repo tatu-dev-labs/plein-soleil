@@ -1,14 +1,41 @@
 <section class="splide splide-hero bl-home-slider" aria-label="Splide Basic HTML Example">
+  <div class="splide__arrows">
+		<button class="splide__arrow splide__arrow--prev">
+			<%= image_tag 'left-arrow.png', :alt => "Prev" %>
+		</button>
+		<button class="splide__arrow splide__arrow--next">
+			<%= image_tag 'right-arrow.png', :alt => "Next" %>
+		</button>
+  </div>
+
   <div class="splide__track">
 		<ul class="splide__list">
 			<li class="splide__slide el-home-slide">
 				<%= image_tag 'slide-home/01.png', :alt => "Plein Soleil Mallorca" %>
+				<div class="el-slide-content">
+					<h3 class="el-home-slide-title">Exclusivas Villas en venta bajo el Sol de Mallorca</h3>
+					<%= link_to '¡DESCÚBRELAS!', '/villas/',
+						:class => 'el-home-slide-link'
+					%>
+				</div>
 			</li>
 			<li class="splide__slide el-home-slide">
 				<%= image_tag 'slide-home/02.png', :alt => "Plein Soleil Mallorca" %>
+				<div class="el-slide-content">
+					<h3 class="el-home-slide-title">Exclusivas Villas en venta bajo el Sol de Mallorca</h3>
+					<%= link_to '¡DESCÚBRELAS!', '/villas/',
+						:class => 'el-home-slide-link'
+					%>
+				</div>
 			</li>
 			<li class="splide__slide el-home-slide">
 				<%= image_tag 'slide-home/03.png', :alt => "Plein Soleil Mallorca" %>
+				<div class="el-slide-content">
+					<h3 class="el-home-slide-title">Exclusivas Villas en venta bajo el Sol de Mallorca</h3>
+					<%= link_to '¡DESCÚBRELAS!', '/villas/',
+						:class => 'el-home-slide-link'
+					%>
+				</div>
 			</li>
 		</ul>
   </div>

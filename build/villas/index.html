@@ -27,6 +27,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <!--CSS!-->
+<link rel="stylesheet" href="/css/splide.min.css">
 <link rel="stylesheet" href="/css/site.css">
 <script src="https://kit.fontawesome.com/a2c4673d96.js" crossorigin="anonymous"></script>
 
@@ -102,7 +103,7 @@ gtag('config', 'XX-XXXXXXXXX-X');
       From: "transform opacity-100 scale-100"
       To: "transform opacity-0 scale-95"
   -->
-  <div class="el-lang-menu-options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+  <div class="el-lang-menu-options hidden" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
       <a href="/" class="el-lang-menu-options-item" role="menuitem" id="menu-item-0">ES</a>
 
       <a href="/en/" class="el-lang-menu-options-item" role="menuitem" id="menu-item-1">EN</a>
@@ -182,6 +183,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
         perPage: 2,
         perMove: 1,
         gap: '30px',
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+        }
     } );
 
     splideCarousel.mount();
