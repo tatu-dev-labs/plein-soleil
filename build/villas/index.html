@@ -72,8 +72,8 @@ gtag('config', 'XX-XXXXXXXXX-X');
 
 <body class="villas villas_index">
 	<header class="bl-header">
-    <img src="/logo.png" class="el-logo" alt="Plein Soleil Mallorca" />
-
+    <a href="/">  <img src="/logo.png" class="el-logo" alt="Plein Soleil Mallorca" />
+</a>
     <nav class="co-main-menu">
     <ul class="el-main-menu">
         <li><a href="/villas/">Villas en venta</a></li>
@@ -245,6 +245,11 @@ document.addEventListener( 'DOMContentLoaded', function() {
         perPage: 2,
         perMove: 1,
         gap: '30px',
+        breakpoints: {
+            768: {
+                perPage: 1,
+            },
+        }
     } );
 
     splideCarousel.mount();
