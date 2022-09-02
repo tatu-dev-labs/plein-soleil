@@ -39,6 +39,10 @@
         @apply text-gray-700 block px-4 py-2 text-sm;
     }
 
+    .el-title {
+        @apply mb-10 text-3xl text-center border-b-2 border-primary inline-block pb-3;
+    }
+
     .el-home-slide {
         height: calc(100vh - 200px);
     }
@@ -224,5 +228,14 @@
     .bl-new-promo-carousel,
     .bl-new-promo-carousel {
         @apply container mx-auto py-10;
+    }
+
+    .bl-entorno-hero {
+        @apply bg-entorno-cover bg-cover;
+        height: 600px;
+    }
+
+    .bl-entorno-intro {
+        @apply container mx-auto flex flex-col items-center py-16 text-xl;
     }
 }

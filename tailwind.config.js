@@ -13,6 +13,7 @@ module.exports = {
       backgroundImage: {
         'villas-hero': "url('/images/villas-hero.png')",
         'video-cover': "url('/images/villas-video-cover.png')",
+        'entorno-cover': "url('/images/entorno.jpeg')",
       }
     },
   },

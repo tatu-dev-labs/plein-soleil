@@ -665,6 +665,18 @@ body {
   color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
+.el-title {
+  margin-bottom: 2.5rem;
+  display: inline-block;
+  border-bottom-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(240 90 36 / var(--tw-border-opacity));
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .el-home-slide {
   height: calc(100vh - 200px);
 }
@@ -1161,6 +1173,58 @@ body {
   margin-right: auto;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.bl-entorno-hero {
+  background-image: url('/images/entorno.jpeg');
+  background-size: cover;
+  height: 600px;
+}
+
+.bl-entorno-intro {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bl-entorno-intro {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bl-entorno-intro {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bl-entorno-intro {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bl-entorno-intro {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bl-entorno-intro {
+    max-width: 1536px;
+  }
+}
+
+.bl-entorno-intro {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .mx-auto {
