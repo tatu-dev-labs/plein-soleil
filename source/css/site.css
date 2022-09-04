@@ -15,7 +15,11 @@
     }
 
     .el-main-menu li {
-        @apply ml-14;
+        @apply ml-7 md:ml-14;
+    }
+
+    .el-main-menu li:first-child {
+        @apply ml-0;
     }
 
     .el-main-menu a {
@@ -23,7 +27,7 @@
     }
 
     .el-lang-menu-button {
-        @apply inline-flex justify-center w-full border border-gray-300 shadow-sm p-2;
+        @apply inline-flex justify-between md:justify-center w-full border border-gray-300 shadow-sm p-2 text-xs md:text-sm;
     }
 
     .el-lang-menu-button-icon {
@@ -114,6 +118,14 @@
         @apply inline-block text-primary uppercase border-b-2 border-white hover:border-primary pb-1 mt-4 text-lg;
     }
 
+    .el-entorno-icons {
+        @apply flex flex-row items-center justify-center my-8;
+    }
+
+    .el-entorno-icons li {
+        @apply mx-2;
+    }
+
     /* SplideJS custom styles */
     .splide.bl-home-slider .splide__slide {
         padding: 90px 115px;
@@ -167,13 +179,18 @@
         @apply bg-primary transform-none w-20;
     }
 
+    /* Tippy custom styles */
+    .tippy-box {
+        @apply text-2xl;
+    }
+
     /* components */
     .co-main-menu {
-        @apply flex flex-row items-center justify-center;
+        @apply flex flex-col md:flex-row items-center justify-center my-5 lg:my-0;
     }
 
     .co-lang-menu {
-        @apply relative inline-block text-left ml-14;
+        @apply relative inline-block text-left ml-0 md:ml-14 mt-5 md:mt-0 w-full md:w-auto;
     }
 
     .co-villas-hero-content {
@@ -191,8 +208,14 @@
 
     /* blocks */
     .bl-header, .bl-footer {
-        @apply container mx-auto flex flex-col lg:flex-row justify-between items-center py-4;
-        height: 100px;
+        @apply container mx-auto flex flex-col lg:flex-row justify-between items-center py-4 px-4 lg:px-0;
+        height: auto;
+    }
+
+    @media (min-width: 992px) {
+        .bl-header {
+            height: 100px;
+        }
     }
 
     .bl-footer {
@@ -237,5 +260,9 @@
 
     .bl-entorno-intro {
         @apply container mx-auto flex flex-col items-center py-16 text-xl;
+    }
+
+    .bl-entorno-mapa {
+        @apply container mx-auto;
     }
 }

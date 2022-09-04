@@ -1,0 +1,26 @@
+<div class="bl-entorno-mapa">
+    <ul class="el-entorno-icons">
+        <li>
+            <%= image_tag 'img-golf.png', :class => 'el-entorno-icon', :'data-tippy-content' => 'Golf Santa Ponsa y Golf Poniente' %>
+        </li>
+        <li>
+            <%= image_tag 'img-puerto.png', :class => 'el-entorno-icon', :'data-tippy-content' => 'Portals Vells, Puerto Adriano y Puerto Portals' %>
+        </li>
+        <li>
+            <%= image_tag 'img-playa.png', :class => 'el-entorno-icon', :'data-tippy-content' => 'Playa Santa Ponsa' %>
+        </li>
+        <li>
+            <%= image_tag 'img-nikki.png', :class => 'el-entorno-icon', :'data-tippy-content' => 'Nikki Beach Mallorca' %>
+        </li>
+        <li>
+            <%= image_tag 'img-colegio.png', :class => 'el-entorno-icon', :'data-tippy-content' => 'Baleares International College' %>
+        </li>
+    </ul>
+    <%= image_tag 'mapa-entorno.jpeg', :class => 'el-entorno-mapa-image' %>
+</div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script>
+tippy('[data-tippy-content]');
+</script>

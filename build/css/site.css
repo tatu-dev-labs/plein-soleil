@@ -604,7 +604,17 @@ body {
 }
 
 .el-main-menu li {
-  margin-left: 3.5rem;
+  margin-left: 1.75rem;
+}
+
+@media (min-width: 768px) {
+  .el-main-menu li {
+    margin-left: 3.5rem;
+  }
+}
+
+.el-main-menu li:first-child {
+  margin-left: 0px;
 }
 
 .el-main-menu a {
@@ -622,14 +632,24 @@ body {
 .el-lang-menu-button {
   display: inline-flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
   padding: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 768px) {
+  .el-lang-menu-button {
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
 }
 
 .el-lang-menu-button-icon {
@@ -838,6 +858,20 @@ body {
   border-color: rgb(240 90 36 / var(--tw-border-opacity));
 }
 
+.el-entorno-icons {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.el-entorno-icons li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /* SplideJS custom styles */
 
 .splide.bl-home-slider .splide__slide {
@@ -910,20 +944,47 @@ body {
   background-color: rgb(240 90 36 / var(--tw-bg-opacity));
 }
 
+/* Tippy custom styles */
+
 /* components */
 
 .co-main-menu {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .co-main-menu {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .co-main-menu {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
 .co-lang-menu {
   position: relative;
-  margin-left: 3.5rem;
+  margin-left: 0px;
+  margin-top: 1.25rem;
   display: inline-block;
+  width: 100%;
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .co-lang-menu {
+    margin-left: 3.5rem;
+    margin-top: 0px;
+    width: auto;
+  }
 }
 
 .co-villas-hero-content {
@@ -1027,16 +1088,26 @@ body {
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 1024px) {
   .bl-header,  .bl-footer {
     flex-direction: row;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
 .bl-header, .bl-footer {
-  height: 100px;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .bl-header {
+    height: 100px;
+  }
 }
 
 .bl-footer {
@@ -1225,6 +1296,45 @@ body {
   padding-bottom: 4rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.bl-entorno-mapa {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .bl-entorno-mapa {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bl-entorno-mapa {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bl-entorno-mapa {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bl-entorno-mapa {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .bl-entorno-mapa {
+    max-width: 1536px;
+  }
+}
+
+.bl-entorno-mapa {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-auto {
